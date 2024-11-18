@@ -4,7 +4,7 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 # Load and split the PDF
-loader = PyPDFLoader(file_path="pdfs/Mock.pdf")
+loader = PyPDFLoader(file_path="./pdfs")
 docs = loader.load()
 
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1024, chunk_overlap=100)
