@@ -13,4 +13,4 @@ chunks = text_splitter.split_documents(docs)
 # Create and save the FAISS vector store
 embedding = HuggingFaceEmbeddings( )
 vector_store = FAISS.from_documents(documents=chunks, embedding=embedding)
-vector_store.save_local("faiss_index.faiss")
+vector_store.save_local("faiss_index")
